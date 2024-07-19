@@ -6,7 +6,9 @@ import '../../../core/widget/basic_button.dart';
 
 class ProductDisplayBox extends StatelessWidget {
   const ProductDisplayBox({
-    super.key, required this.img, required this.description,
+    super.key,
+    required this.img,
+    required this.description,
   });
   final String img;
   final String description;
@@ -24,16 +26,15 @@ class ProductDisplayBox extends StatelessWidget {
         children: [
           Container(
             width: 175,
-            height: 95,
-            decoration:  BoxDecoration(
+            height: 90,
+            decoration: BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage(
-                    img),
+                image: NetworkImage(img),
               ),
             ),
           ),
           ProductTitle(
-            title:description,
+            title: description,
             height: 60,
           ),
           const SizedBox(height: 20),
